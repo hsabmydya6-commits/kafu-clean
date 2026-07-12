@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كفو كلين - تنظيف مكيفات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D99E1GJC77U6KOKLHP60');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #0e2444 50%, #0a1628 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      direction: rtl;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      width: 100%;
+      max-width: 480px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #0057b8 0%, #003d8a 60%, #002766 100%);
+      padding: 36px 24px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -40px; left: -40px;
+      width: 160px; height: 160px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -20px;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: #a8d4ff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255,255,255,0.2);
+      letter-spacing: 0.5px;
+    }
+
+    .logo-icon {
+      font-size: 52px;
+      margin-bottom: 8px;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .brand-name span { color: #5bc4ff; }
+
+    .tagline {
+      color: rgba(255,255,255,0.75);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    /* City strip */
+    .city-strip {
+      background: linear-gradient(90deg, #e8f4ff, #f0f9ff);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border-bottom: 1px solid #d0e9ff;
+    }
+    .city-strip .icon { color: #0057b8; font-size: 16px; }
+    .city-strip span { color: #0057b8; font-size: 14px; font-weight: 700; }
+
+    /* Price hero */
+    .price-section {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e8f4ff 100%);
+      padding: 28px 24px;
+      text-align: center;
+      border-bottom: 1px solid #d0e9ff;
+    }
+    .price-label {
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .price-amount {
+      font-size: 64px;
+      font-weight: 900;
+      color: #0057b8;
+      line-height: 1;
+    }
+    .price-currency {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0057b8;
+    }
+    .price-unit {
+      font-size: 14px;
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .price-note {
+      display: inline-block;
+      background: #fff3cd;
+      color: #92400e;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid #fcd34d;
+    }
+
+    /* Body */
+    .body { padding: 24px; }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: linear-gradient(180deg, #0057b8, #5bc4ff);
+      border-radius: 4px;
+    }
+
+    /* Services grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .service-item {
+      background: linear-gradient(135deg, #f8fbff, #eef6ff);
+      border: 1px solid #d0e9ff;
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .service-item:hover { transform: translateY(-2px); }
+    .service-item .s-icon { font-size: 28px; margin-bottom: 6px; display: block; }
+    .service-item .s-name { font-size: 13px; font-weight: 700; color: #1e3a5f; line-height: 1.3; }
+
+    /* Features */
+    .features-list {
+      list-style: none;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .features-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+    .feat-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0057b8, #0080ff);
+      color: white;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #d0e9ff, transparent);
+      margin: 4px 0 20px;
+    }
+
+    /* Phone */
+    .phone-box {
+      background: linear-gradient(135deg, #f8fbff, #eef6ff);
+      border: 2px solid #0057b8;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .phone-label { font-size: 12px; color: #6b7280; font-weight: 600; margin-bottom: 4px; }
+    .phone-number { font-size: 26px; font-weight: 900; color: #0057b8; letter-spacing: 1px; direction: ltr; }
+
+    /* Buttons */
+    .btn-row { display: flex; gap: 10px; margin-bottom: 0; }
+
+    .btn {
+      flex: 1;
+      padding: 16px 12px;
+      border-radius: 14px;
+      border: none;
+      font-family: 'Cairo', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:active { transform: scale(0.97); }
+
+    .btn-call {
+      background: linear-gradient(135deg, #0057b8, #0080ff);
+      color: white;
+      box-shadow: 0 6px 20px rgba(0,87,184,0.4);
+    }
+    .btn-call:hover { box-shadow: 0 8px 28px rgba(0,87,184,0.55); }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: white;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+    }
+    .btn-whatsapp:hover { box-shadow: 0 8px 28px rgba(37,211,102,0.55); }
+
+    /* Footer */
+    .footer {
+      background: #f9fafb;
+      border-top: 1px solid #e5e7eb;
+      padding: 12px 24px;
+      text-align: center;
+    }
+    .footer-copy { font-size: 12px; color: #9ca3af; margin-bottom: 4px; }
+    .footer-designer {
+      font-size: 12px;
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .footer-designer a {
+      color: #25D366;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .footer-designer a:hover { text-decoration: underline; }
+
+    /* Pulse animation for buttons */
+    @keyframes pulse-ring {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,87,184,0.4); }
+      70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0,87,184,0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,87,184,0); }
+    }
+    .btn-call { animation: pulse-ring 2.5s infinite; }
+
+    @media (max-width: 360px) {
+      .price-amount { font-size: 52px; }
+      .brand-name { font-size: 26px; }
+      .btn { font-size: 13px; }
+    }
+
+    /* Floating side buttons */
+    .float-btns {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      z-index: 9999;
+    }
+
+    .float-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      text-decoration: none;
+      transition: width 0.25s ease, background 0.2s;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .float-btn:first-child {
+      border-radius: 0 12px 0 0;
+    }
+    .float-btn:last-child {
+      border-radius: 0 0 12px 0;
+    }
+
+    .float-call {
+      background: linear-gradient(160deg, #0057b8, #0080ff);
+      box-shadow: 3px 0 16px rgba(0,87,184,0.5);
+    }
+    .float-call:hover { background: linear-gradient(160deg, #0048a0, #006fe0); }
+
+    .float-wa {
+      background: linear-gradient(160deg, #25D366, #128C7E);
+      box-shadow: 3px 0 16px rgba(37,211,102,0.5);
+    }
+    .float-wa:hover { background: linear-gradient(160deg, #1eb855, #0f7a6d); }
+
+    .float-btn svg { width: 24px; height: 24px; fill: white; flex-shrink: 0; }
+
+    /* Ripple on click */
+    .float-btn::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.18);
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    .float-btn:active::after { opacity: 1; }
+
+    /* Tooltip on hover */
+    .float-btn .tip {
+      position: absolute;
+      left: 56px;
+      background: #1f2937;
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .float-btn .tip::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 5px solid transparent;
+      border-right-color: #1f2937;
+    }
+    .float-btn:hover .tip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Pulse on call float */
+    @keyframes float-pulse {
+      0%   { box-shadow: 3px 0 0 0 rgba(0,87,184,0.6); }
+      70%  { box-shadow: 3px 0 0 10px rgba(0,87,184,0); }
+      100% { box-shadow: 3px 0 0 0 rgba(0,87,184,0); }
+    }
+    .float-call { animation: float-pulse 2.5s infinite; }
+  </style>
+</head>
+<body>
+
+<!-- Floating side buttons -->
+<div class="float-btns">
+  <a class="float-btn float-call" href="tel:0545089091" onclick="return handleCall(event)" title="اتصل بنا">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+    <span class="tip">اتصل الآن</span>
+  </a>
+  <a class="float-btn float-wa" href="https://wa.me/966545089091" target="_blank" onclick="fireContact('whatsapp')" title="واتساب">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="tip">واتساب</span>
+  </a>
+</div>
+
+<div class="card">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="badge">✦ خدمة احترافية معتمدة ✦</div>
+    <span class="logo-icon">❄️</span>
+    <div class="brand-name">كفو <span>كلين</span></div>
+    <div class="tagline">تنظيف المكيفات بأعلى معايير الجودة</div>
+  </div>
+
+  <!-- City -->
+  <div class="city-strip">
+    <span class="icon">📍</span>
+    <span>المملكة العربية السعودية</span>
+  </div>
+
+  <!-- Price -->
+  <div class="price-section">
+    <div class="price-label">العرض الخاص</div>
+    <div class="price-row">
+      <div class="price-amount">25</div>
+      <div class="price-currency">ريال</div>
+    </div>
+    <div class="price-unit">للمكيف الواحد</div>
+    <br/>
+    <div class="price-note">⚡ للطلبيات التي تزيد عن 7 مكيفات فقط</div>
+  </div>
+
+  <div class="body">
+
+    <!-- Services -->
+    <div class="section-title">خدماتنا</div>
+    <div class="services-grid">
+      <div class="service-item">
+        <span class="s-icon">🧹</span>
+        <div class="s-name">تنظيف الفلاتر</div>
+      </div>
+      <div class="service-item">
+        <span class="s-icon">💨</span>
+        <div class="s-name">تنظيف الكويل</div>
+      </div>
+      <div class="service-item">
+        <span class="s-icon">🧼</span>
+        <div class="s-name">تعقيم وتطهير</div>
+      </div>
+      <div class="service-item">
+        <span class="s-icon">🔧</span>
+        <div class="s-name">فحص شامل</div>
+      </div>
+      <div class="service-item">
+        <span class="s-icon">🌡️</span>
+        <div class="s-name">ضبط الأداء</div>
+      </div>
+      <div class="service-item">
+        <span class="s-icon">🏠</span>
+        <div class="s-name">خدمة منزلية</div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="section-title">لماذا كفو كلين؟</div>
+    <ul class="features-list">
+      <li>
+        <div class="feat-icon">✓</div>
+        فريق فني مدرب ومحترف
+      </li>
+      <li>
+        <div class="feat-icon">⚡</div>
+        خدمة سريعة وفي الموعد
+      </li>
+      <li>
+        <div class="feat-icon">🛡</div>
+        ضمان جودة العمل 100%
+      </li>
+      <li>
+        <div class="feat-icon">💰</div>
+        أسعار منافسة وشفافة
+      </li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <!-- Phone -->
+    <div class="phone-box">
+      <div class="phone-label">للتواصل والحجز</div>
+      <div class="phone-number">0545089091</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+      <a class="btn btn-call" href="tel:0545089091" onclick="return handleCall(event)">
+        📞 اتصل الآن
+      </a>
+      <a class="btn btn-whatsapp" href="https://wa.me/966545089091" target="_blank" onclick="fireContact('whatsapp')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        واتساب
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-copy">© 2025 كفو كلين — جميع الحقوق محفوظة</div>
+    <div class="footer-designer">
+      تم التصميم بواسطة
+      <a href="https://wa.me/201149049682" target="_blank">م. محمد علي</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // TikTok Pixel — Contact event
+  function fireContact(method) {
+    try {
+      if (window.ttq) {
+        window.ttq.track('Contact', {
+          content_type: 'product',
+          content_name: 'تنظيف مكيفات',
+          description: method === 'call' ? 'phone_call' : 'whatsapp'
+        });
+      }
+    } catch(e) {}
+  }
+
+  // For tel: links — prevent default, fire pixel, then navigate after delay
+  // This guarantees the pixel request is dispatched before the browser leaves
+  function handleCall(e) {
+    e.preventDefault();
+    fireContact('call');
+    setTimeout(function() {
+      window.location.href = 'tel:0545089091';
+    }, 400);
+    return false;
+  }
+
+  // Smooth bounce on card load
+  document.addEventListener('DOMContentLoaded', function() {
+    var card = document.querySelector('.card');
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1)';
+    setTimeout(function() {
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    }, 80);
+  });
+</script>
+
+</body>
+</html>
